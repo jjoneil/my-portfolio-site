@@ -9,6 +9,8 @@ var bodyParser = require("body-parser");
 		extended: true
 }));
 
+var port = 3030
+
 //____middleware_________
 //_______________________
 
@@ -20,7 +22,6 @@ app.get("/", function(req, res){
 //________________________
 
 app.use(function(req, res, next){
-	console.log(err);
 	res.status(404);
 	res.send("404 File Not Found");
 });
@@ -31,8 +32,8 @@ app.use(function(err, req, res, next){
 	res.send("500 Internal Server Error");
 });
 
-app.listen(8080, function(){
-	console.log("Server runnin'");
+app.listen(port, function(){
+	console.log("Server runnin on localhost:" + port);
 });
 
 //__________________________
