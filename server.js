@@ -18,6 +18,9 @@ app.get("/", function(req, res){
 	res.sendFile(__dirname + "/main.html")
 });
 
+app.use(express.static("public"));
+app.use(express.static("img"));
+
 //____handle errors_______
 //________________________
 
@@ -33,7 +36,7 @@ app.use(function(err, req, res, next){
 });
 
 app.listen(port, function(){
-	console.log("Server runnin on localhost:" + port);
+	console.log("Server runnin on http://localhost:" + port);
 });
 
 //__________________________
