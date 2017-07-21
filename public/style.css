@@ -9,6 +9,7 @@ body {
     overflow: auto;
     height: 100vh;
     width: 100vw;
+    font-family: "Source Sans Pro" Sans;
 }
 
 
@@ -22,6 +23,15 @@ body {
 	width: auto;
 	height: 100vh;
 	margin-bottom: 5vh;
+	text-align: center;
+}
+
+#header-text {
+	font-weight: 600;
+	font-size: 48px;
+	color: white;
+	float: right;
+
 }
 
 .about-pic {
@@ -70,4 +80,20 @@ body {
 	background-color: darkgray;
 	padding-top: 5vh;
 	padding-bottom: 5vh;
+}
+
+footer {
+	padding: 10px;
+	padding-top: 15px;
+	color: lightgray;
+}
+
+#copy {
+	font-size: 24px;
+	color: white;
+}
+
+i {
+	margin-left: 5px;
+	margin-right: 5px;
 }

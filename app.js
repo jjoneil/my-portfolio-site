@@ -17,3 +17,5 @@ var funky = new Vue({
 		}
 	}
 })
+
+//sooth scrolling thing in future
