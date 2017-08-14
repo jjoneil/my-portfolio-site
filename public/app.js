@@ -1,13 +1,14 @@
 var app = new Vue({
+	el: '#vue',
 	data: {
 		resume: false
 	},
 	methods: {
 		showResume: function(){
-			if(!resume){
-				resume = true
-			} else if (resume){
-				resume = false
+			if(!this.resume){
+				this.resume = true
+			} else if (this.resume){
+				this.resume = false
 			} 
 
 		}

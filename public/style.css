@@ -12,25 +12,36 @@ body {
     font-family: "Source Sans Pro" Sans;
 }
 
+.navbar {
+	opacity: .8;
+	color: white;
+	border-bottom: 2px solid white;
+}
+
+.navbar li {
+	opacity: 1;
+}
+
 
 .page-header {
 	background-image: url("view1.png");
-	background-size: 120%;
-	background-position: center;
+	background-size: 1400px;
+	background-position: top;
 	background-repeat: no-repeat;
 	margin-top: -20px;
 	padding: 0;
 	width: auto;
-	height: 100vh;
+	height: 120vh;
 	margin-bottom: 5vh;
-	text-align: center;
 }
 
 #header-text {
 	font-weight: 600;
-	font-size: 48px;
+	font-size: 72px;
 	color: white;
 	float: right;
+	margin-top: 30vh;
+	height: 40vh;
 
 }
 
@@ -42,6 +53,12 @@ body {
 #about-text {
 	padding: 15px;
 	padding-left: 5vw;
+}
+
+#about-box {
+	width: 95vw;
+	padding-top: 15vh;
+	padding-bottom: 15vh;
 }
 
 #page-container {
@@ -80,6 +97,12 @@ body {
 	background-color: darkgray;
 	padding-top: 5vh;
 	padding-bottom: 5vh;
+	text-align: center;
+}
+
+#resume-buttons {
+	text-align: center;
+	margin-bottom: 5vh;
 }
 
 footer {

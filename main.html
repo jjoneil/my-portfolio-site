@@ -23,7 +23,7 @@
 	<script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-	<div id="app">
+	<div id="vue">
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -53,18 +53,19 @@
 		<div id="page-container">
 
 			<div class="page-header">
-				<!-- <div class="row">
-					<div class="col-sm-12">
-						<div class="col-sm-6">
-							<div id="header-text">
-								<h2>Hi there! I'm John,</h2>
-								<p>I like to develop cool stuff on the web.</p>
-								<p>If you like what you see, keep going,</p>
-								<p>and maybe reach out.</p>
+				<div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="col-sm-8 col-sm-offset-1">
+								<div id="header-text">
+									<p>I like</p>
+									<p>to develop</p>
+									<p>cool stuff on the web.</p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 			</div>
 			<!-- container -->
 			<div class="container">
@@ -105,12 +106,12 @@
 
 				<!-- resume from drive -->
 				<div class="row" id="resume-container">
-					<div style="margin-left: 15vw; margin-right: auto;">
-						<!-- <div>
-							<button v-if="hideResume" class="btn btn-large" v-on:click="showResume">Show Resume</button>
-							<button v-if="!hideResume" class="btn btn-large" v-on:click="showResume">Hide Resume</button>
-						</div> -->
-						<iframe v-if="!hideResume" style="width: 70vw; height: 80vh; overflow-y: scroll;" src="https://docs.google.com/document/d/1zf_9OtR1Nlc2fbEqyY4jUfZ3wdiz0iikj0KPrfvRN2g/pub?embedded=true"></iframe>
+					<div>
+						<div id="resume-buttons">
+							<button v-if="!resume" class="btn btn-large" v-on:click="showResume">Show Resume</button>
+							<button v-if="resume" class="btn btn-large" v-on:click="showResume">Hide Resume</button>
+						</div>
+						<iframe v-if="resume" style="width: 70vw; height: 80vh; overflow-y: scroll;" src="https://docs.google.com/document/d/1zf_9OtR1Nlc2fbEqyY4jUfZ3wdiz0iikj0KPrfvRN2g/pub?embedded=true"></iframe>
 					</div>	
 				</div>
 				<!-- end container -->
@@ -132,7 +133,7 @@
 		</div>
 	</div>
 	
-	<!-- <script src="app.js"></script> -->
+	<script src="app.js"></script>
 </body>
 <!-- future vue or react script -->
 
